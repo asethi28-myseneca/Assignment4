@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  assignment-service:
+    image: your-assignment-service-image:tag
+    deploy:
+      replicas: 3 # Number of replicas you want
+    ports:
+      - "8080:8080" # Map container port to host port
